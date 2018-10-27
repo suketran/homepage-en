@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'CerebriSans Regular';
+    src: url('../fonts/Cerebri/WEB/cerebrisans-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CerebriSans Bold';
+    src: url('../fonts/Cerebri/WEB/cerebrisans-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CerebriSans Book';
+    src: url('../fonts/Cerebri/WEB/cerebrisans-book.ttf') format('truetype');
+}
+body{
+    font-family: 'CerebriSans Book',Arial, sans-serif;
+    background-color: #ffffff;
+    color: #6a6a6a;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #000000;
+    font-family: "CerebriSans Bold";
+}
+img{
+    max-width: 100%;
+}
+a, a:hover, a:link, a:active {
+    text-decoration: none;
+}
+a.navbar-brand > #img-logo{
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#000;
+}
+.btn-custom{
+    background-color: #b31021;
+    border-radius: 0;
+    color: #fff !important;
+    font-family: "CerebriSans Bold";
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-radius: 3px;
+}
+.bg-color{
+    background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #b31021;
+}
+.nav-item::after{content:'';display:block;width:0px;height:2px;background:#b31021;transition: 0.2s;}
+.nav-item:hover::after{width:100%;}
+.nav-item.active::after{width:100%;}
+
+#bg-welcome {
+    background: url(../images/20180622-NYY_9519.png) no-repeat center center;   
+    color: #ffffff;
+    background-size: cover;
+}
+#bg-welcome > .caption {
+    background-color: black;
+    color: white;
+    background: rgba(5,16,48, .5);
+}
+header .intro-text{
+    height: 350px;
+}
+.pad-25{
+    padding: 2.25rem;
+}
+header .intro-text .intro-heading {
+    font-family: "CerebriSans Bold", Arial, sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+header .intro-text .intro-lead-in{
+    margin-top: 170px;
+    position: relative;
+    line-height: 30px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-family: 'CerebriSans Book';
+}
+header .intro-text .intro-lead-in::after{
+    position: absolute;
+    top: 0;
+    content:'';
+    display:block;
+    width:0px;height:3px;
+    background:#ffab33;
+    width:50px;
+}
+section#about{
+    padding-top: 4rem;   
+    background-color: #fff8ef;
+}
+section#about #bg-white{
+    display: none;
+}
+section#about h2{
+    font-family: 'CerebriSans Bold';
+}
+section#about h6{
+    color: #ffab33;
+    padding-bottom: 2rem;
+}
+section#about #img-robot{
+    width: 100%;
+}
+section#about #card-box{
+    padding-top: 3rem;
+    min-height: 300px;
+    border: none;
+    position: relative; 
+    z-index: 2;  
+}
+section#about #card-box .card:after {
+    display: block;    
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+section#about #card-box .card:nth-child(1):after {
+    background: #b9e1cd;
+    border-top: 4px solid #b9e1cd;
+}
+section#about #card-box .card:nth-child(2):after {
+    background: #b6d0f3;
+    border-top: 4px solid #b6d0f3;
+}
+section#about #card-box .card:nth-child(3):after {
+    background: #f0dca5;
+    border-top: 4px solid #f0dca5;
+}
+section#about #card-box .card{
+    border: none;
+    background-color: #fff;    
+    border-radius:0
+}
+section#about #card-box h5{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+section#about #card-box .red{
+    color: #b31021;
+}
+section#about #card-box .number{
+    float: right;
+    color: #cccccc;
+}
+section#services {
+    background-color: #ffffff; 
+}
+section#services #card-services .card{
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    color: #fff;
+}
+section#services #card-services #geometry{
+    background: url(../images/geometry.png) no-repeat top left;
+    background-size: cover;
+    min-height: 300px;
+}
+section#services #card-services #grid-system{
+    background: url(../images/grid-system.png) no-repeat top left;
+    background-size: cover;
+    min-height: 300px;
+}
+section#services #card-services #tool-blur{
+    background: url(../images/tool-blur.png) no-repeat top left;
+    background-size: cover;
+    min-height: 300px;
+}
+section#services #card-services h5{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+    color:#fff;
+  
+}
+.table-striped tbody tr:nth-of-type(odd){
+    background: #e7e9ea;
+}
+.table-striped tbody tr{
+    background: #f1f3f4;
+}
+.table-striped td, .table-striped th{
+    border: none;
+}
+section#services .tb-card{
+    margin-top: 4rem;
+}
+section#services .tb-card img{
+    padding-bottom: 2rem;
+}
+section#services .tb-card h5{
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+section#company h2{
+    padding-top: 2rem;    
+    padding-bottom: 1rem;    
+    font-size: 45px;
+}
+section#company .table >tbody>tr> th{
+    font-family: 'CerebriSans Book';
+}
+section#company a.access-link{
+    color: #b31021;
+    text-decoration: underline;
+    font-weight: 600;
+}
+section#team {
+    margin-top: 3rem;
+    background: url(../images/bg-team.png) no-repeat center center;      
+    background-size: cover;
+    min-height: 500px;
+}
+section#team h2{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom:3rem;
+    margin-top: 2rem;
+}
+.pd-1{
+    padding: 1rem;
+}
+.pdb-50{
+    padding-bottom: 50px;
+}
+section#team .card-info .card{
+border: none;
+border-radius: 0;
+text-align: center;
+background: none;
+}
+section#team .card-info .card h6.card-sub-title{
+    color: #ffab33;
+    font-family: 'CerebriSans Book';
+    font-weight: 400;
+    text-align: center;
+}
+section#carrers{
+    background-color: #fff8ef;   
+}
+section#carrers h2{
+    margin-bottom: 1.5rem;
+}
+section#carrers .btn-custom{
+    margin-top: 1rem;
+}
+section#carrers .card-carrers{
+    padding-top: 2rem;
+}
+section#carrers .card-carrers .card{
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    background-color: #fff8ef;
+}
+section#carrers .card-carrers .card h4.card-title{
+    color: #ffab33;
+    text-align: left;
+}
+section#carrers .card-carrers .card h6.card-sub-title{
+    text-align: left;
+}
+section#carrers .card-carrers ul{
+    list-style-type: none;
+    padding: 0;
+    
+}
+section#carrers .card-carrers ul li{
+    background-image: url("../images/tick.png");
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    line-height: 30px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+   
+}
+section#company img{
+    width: 100%;
+}
+section#customer {  
+    background: url(../images/img-2.png) no-repeat 100%;    
+}
+
+section#customer .caption {
+    min-height: 490px;
+}
+
+section#customer .caption p{
+    font-size: 14px;
+}
+section#customer .caption p #jp-name{
+    font-size: 20px;
+}
+section#customer .caption p #jp-director{  
+    color: #f8a93c;
+}
+section#customer h1{
+    color:#fff;
+}
+
+section#projects{
+    background-color: #f3f3f3;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.projects h2{
+    text-align: center;
+}
+h6.title-sv{
+    text-align: center;
+    color:#fab047;
+}
+section#projects h6{
+    color: #facb87;
+}
+section#projects h2{
+    font-weight: 700;
+}
+.news-item p{
+    padding-top: 8px;
+}
+#news{
+    padding-bottom: 50px;
+}
+.img-career{
+    float: right;
+}
+.no-pad{
+    padding:0;
+}
+.footer{
+    border-top: 2px solid #eeeeee;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) { 
+    header .intro-text .intro-heading {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 45px;
+    }
+    .bgleft img{
+        width: 150px;
+    }
+    section#services h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .pad-60{
+    padding: 0 20px 0 20px;
+    }
+    .img-team img{
+        width: 200px;
+    }
+    section#carrers h2{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .card-pad{
+        padding: 20px;
+    }
+    .bgleft{
+    width: 100%;
+    padding: 30px 0px;
+    background: url(../images/bg.png) center;
+    display: inline-block;
+    min-height: 490px;
+    color:#fff;
+    }
+    section#projects h2{
+        padding-bottom: 10px;
+    }
+    section#news h3{
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .pd-45{
+        padding-top: 45px;
+    }
+    .card-img-top{
+        width: 200px;
+    }
+    .img-team{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    section#about{
+        position: relative;
+     
+    }
+    section#about #bg-white{
+        height: 300px;
+        background-color: white;
+        position: absolute;
+        bottom: -180px;
+        z-index: 1;
+        width: 100%;
+        display: block;
+    }
+    section#about #card-box .card{
+        box-shadow: 0px 30px 50px #eaeaea;
+    }
+    section#services {      
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 5rem;
+        z-index: 2;
+    }
+    section#services h2{
+        padding-bottom: 2rem;   
+        font-size: 45px;     
+    }
+    section#team h2{
+       margin-top: 4rem;
+       margin-bottom:5rem;
+       font-size: 40px;
+    }
+    section#carrers{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    section#carrers .card-carrers .card h4{
+        margin-bottom: 1.5rem;
+    }
+    section#customer .caption {
+        color:#fff;
+    }
+    section#customer h1{
+        color:#fff;
+    }
+    section#customer img{
+        margin-bottom: 1rem;
+        width: 150px;
+    }
+    section#customer p{
+        margin-right: 60px;
+    }
+    section#projects{       
+        padding-top: 4rem;
+        padding-bottom: 5rem;       
+    }
+    section#projects h2{       
+        padding-bottom: 1.5rem;
+    }
+    
+    section#projects #card-project .card{
+        box-shadow: 0px 7px 40px #ccc;
+        padding-top: 3rem;
+        min-height: 300px;
+        border: none;             
+    }
+    section#projects #card-project .card:after {
+        display: block;    
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    section#projects #card-project .card:nth-child(1):after {   
+        border-top: 4px solid #009cdd;    
+    }
+    section#projects #card-project .card:nth-child(2):after {      
+        border-top: 4px solid #b5d76f;
+    }
+    section#projects #card-project .card img{
+        margin: 0 70px;
+    }
+    section#projects #card-project .card .card-title{
+        text-align: center;
+    }
+    section#projects #card-project .card:nth-child(1) .card-title{
+        color: #40b5e6;
+    }
+    section#projects #card-project .card:nth-child(2) .card-title{
+        color: #a4ce4e;
+    }
+    section#projects ul.list-group{       
+        text-align: center;
+    }
+    section#projects ul.list-group li{
+        border: none;
+    }
+    section#news h3{   
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header .intro-text .intro-heading {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 32px;
+    }
+    header .intro-text .intro-lead-in{
+    margin-top: 170px;
+    position: relative;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-family: 'CerebriSans Book';
+}
+.bgleft{
+    width: 50%;
+    padding: 78px 0px;
+    background: url(../images/bg.png);
+    display: inline-block;
+}
+.pad-60{
+    padding: 0 0 0 80px;
+}
+  }
